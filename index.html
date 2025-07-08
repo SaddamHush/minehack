@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mine Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="connect-page" class="container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <input type="text" id="provably-key" class="connect-input" placeholder="Provably Fair Key">
+    <button id="connect-btn" class="predict-btn">Connect</button>
+    <div id="loading-section" style="display:none; width:100%; margin-top:24px;">
+      <div class="loading-spinner" id="loading-spinner"></div>
+      <div id="loading-text" class="loading-text">Connecting to your 1WIN account</div>
+    </div>
+  </div>
+
+  <div id="predictor-app" class="container" style="display:none;">
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="prediction-single">
+      <img src="lvl1/1.png" alt="Prediction" class="prediction-img" id="prediction-img">
+    </div>
+    <button class="predict-btn">Predict</button>
+    <div class="qa-section">
+      <div class="qa-item">
+        <button class="qa-question">What is Mines Predictor?</button>
+        <div class="qa-answer">Mines Predictor is a tool that simulates predictions for the Mines game, providing a fun and interactive experience.</div>
+      </div>
+      <div class="qa-item">
+        <button class="qa-question">Is this app fair?</button>
+        <div class="qa-answer">This app is for entertainment purposes and does not guarantee any real-world outcomes or winnings.</div>
+      </div>
+      <div class="qa-item">
+        <button class="qa-question">How do I use the predictor?</button>
+        <div class="qa-answer">Enter your provably fair key, connect, and click Predict to see simulated results.</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
