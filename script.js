@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showPredictionLoading();
     setTimeout(() => {
       const random = Math.floor(Math.random() * totalPredictions) + 1;
-      predictionImg.src = 'lvl1/' + random + '.png';
+      predictionImg.src = random + '.png';
       predictionImg.alt = 'Prediction ' + random;
       hidePredictionLoading();
     }, 3000);
